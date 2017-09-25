@@ -10,40 +10,42 @@ if ($name == "Charge acquéreur") {
       "<p class='selling-p'>PRIX DE VENTE</p>" .
       "<p class='number-p'>" . number_format($data->field_field_prix_avec_honoraires[0]['raw']['value'], 0, ' ', ' ') . " €</p>" .
       "<p class='fees-p'>honoraires inclus</p>" .
+      "<p class='splitter-p'>-</p>" .
       "<p class='number-p'>" . number_format($data->field_field_prix_reel[0]['raw']['value'], 0, ' ', ' ') . " €</p>" .
       "<p class='fees-p'>honoraires exclus</p>" .
       "<p class='selling-p second-p'>HONORAIRES :</p>" .
       "<p class='number-p'>" . number_format($data->field_field_taux_d_honoraires[0]['raw']['value'], 0, ' ', ' ') . " %</p>" .
-      "<p class='fees-p feesname-p'>" . $name . "</p>");
+      "<p class='fees-p'>" . $name . "</p>");
     } else if ($name == "Charged to the customer") {
     echo(
       "<p class='selling-p'>SELLING PRICE</p>" .
       "<p class='number-p'>" . number_format($data->field_field_prix_avec_honoraires[0]['raw']['value'], 0, ' ', ' ') . " €</p>" .
       "<p class='fees-p'>fees included</p>" .
+      "<p class='splitter-p'>-</p>" .
       "<p class='number-p'>" . number_format($data->field_field_prix_reel[0]['raw']['value'], 0, ' ', ' ') . " €</p>" .
       "<p class='fees-p'>fees excluded</p>" .
       "<p class='selling-p second-p'>FEES :</p>" .
       "<p class='number-p'>" . number_format($data->field_field_taux_d_honoraires[0]['raw']['value'], 0, ' ', ' ') . " %</p>" .
-      "<p class='fees-p feesname-p'>" . $name . "</p>");
+      "<p class='fees-p'>" . $name . "</p>");
     } else if ($name == "Charge vendeur") {
     echo(
       "<p class='selling-p first-p'>PRIX DE VENTE</p>" .
       "<p class='number-p'>" . number_format($data->field_field_prix_reel[0]['raw']['value'], 0, ' ', ' ') . " €</p>" .
       "<p class='selling-p second-p'>HONORAIRES :</p>" .
-      "<p class='fees-p feesname-p'>" . $name . "</p>");
+      "<p class='fees-p'>" . $name . "</p>");
     } else if ($name == "Charged to the seller") {
     echo(
       "<p class='selling-p first-p'>SELLING PRICE</p>" .
       "<p class='number-p'>" . number_format($data->field_field_prix_reel[0]['raw']['value'], 0, ' ', ' ') . " €</p>" .
       "<p class='selling-p second-p'>FEES :</p>" .
-      "<p class='fees-p feesname-p'>" . $name . "</p>");
+      "<p class='fees-p'>" . $name . "</p>");
     } else if ($lang_name =="en") {
     echo (
       "<p class='selling-p first-p'>SELLING PRICE</p>" . 
-      "<p class='fees-p feesname-p'>" . $name2 . "</p>");
+      "<p class='fees-p'>" . $name2 . "</p>");
     } else {
     echo (
       "<p class='selling-p first-p'>PRIX DE VENTE</p>" . 
-      "<p class='fees-p feesname-p'>" . $name2 . "</p>");
+      "<p class='fees-p'>" . $name2 . "</p>");
     };
 ?>
