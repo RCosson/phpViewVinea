@@ -13,7 +13,8 @@ if ($name == "Charge acquéreur") {
       "<p class='splitter-p'>-</p>" .
       "<p class='number-p'>" . number_format($data->field_field_prix_reel[0]['raw']['value'], 0, ' ', ' ') . " €</p>" .
       "<p class='fees-p'>honoraires exclus</p>" .
-      "<p class='selling-p second-p'>HONORAIRES :</p>" .
+      "<p class='splitter-p'>-</p>" .
+      "<p class='selling-p'>HONORAIRES :</p>" .
       "<p class='number-p'>" . number_format($data->field_field_taux_d_honoraires[0]['raw']['value'], 0, ' ', ' ') . " %</p>" .
       "<p class='fees-p'>" . $name . "</p>");
     } else if ($name == "Charged to the customer") {
@@ -24,7 +25,8 @@ if ($name == "Charge acquéreur") {
       "<p class='splitter-p'>-</p>" .
       "<p class='number-p'>" . number_format($data->field_field_prix_reel[0]['raw']['value'], 0, ' ', ' ') . " €</p>" .
       "<p class='fees-p'>fees excluded</p>" .
-      "<p class='selling-p second-p'>FEES :</p>" .
+      "<p class='splitter-p'>-</p>" .
+      "<p class='selling-p'>FEES :</p>" .
       "<p class='number-p'>" . number_format($data->field_field_taux_d_honoraires[0]['raw']['value'], 0, ' ', ' ') . " %</p>" .
       "<p class='fees-p'>" . $name . "</p>");
     } else if ($name == "Charge vendeur") {
