@@ -1,1 +1,1 @@
-PHP global field Drupal, permet d'afficher certains champs selon une catégorie choisie pendant la création/modification d'un contenu.
+PHP global field Drupal 7, permet d'afficher certains champs selon une catégorie choisie pendant la création/modification d'un contenu.
