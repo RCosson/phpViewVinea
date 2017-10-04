@@ -34,13 +34,13 @@ if ($name == "Charge acquéreur") {
       "<p class='selling-p first-p'>PRIX DE VENTE</p>" .
       "<p class='number-p'>" . number_format($data->field_field_prix_de_vente[0]['raw']['value'], 0, ' ', ' ') . " €</p>" .
       "<p class='selling-p second-p'>HONORAIRES :</p>" .
-      "<p class='fees-p'>" . $name . "</p>");
+      "<p class='fees-p smallerfees-p'>" . $name . "</p>");
     } else if ($name == "Charged to the seller") {
     echo(
       "<p class='selling-p first-p'>SELLING PRICE</p>" .
       "<p class='number-p'>" . number_format($data->field_field_prix_de_vente[0]['raw']['value'], 0, ' ', ' ') . " €</p>" .
       "<p class='selling-p second-p'>FEES :</p>" .
-      "<p class='fees-p'>" . $name . "</p>");
+      "<p class='fees-p smallerfees-p'>" . $name . "</p>");
     } else if ($lang_name =="en") {
     echo (
       "<p class='selling-p first-p'>SELLING PRICE</p>" . 
